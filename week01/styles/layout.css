@@ -27,10 +27,11 @@ nav {
 }
 
 main {
+	display: none;
 	grid-column: 2 / 3;
 	border: 1px solid rgb(0 0 0 / .2);
 	padding: 1rem;
-	background-color: #e79191;
+	background-color: #eee;
 	height: 40vh;
 }
 aside {
