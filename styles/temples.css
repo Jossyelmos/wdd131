@@ -14,15 +14,18 @@ header {
 	color: #fff;
 }
 
-header p {
-	font-size: 2rem;
-}
-
 h1 {
 	text-align: left;
 	font-family: times, serif;
 	font-size: 1.5rem;
 	margin-left: 1rem;
+}
+
+h2 {
+	font-size: 1.2rem;
+	color: navy;
+	text-align: center;
+	margin: 1rem;
 }
 
 nav {
