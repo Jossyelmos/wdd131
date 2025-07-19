@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>WDD 131 - Country Page</title>
+        <meta name="description" content="Fact and weather report of Nigeria.">
+        <meta name="author" content="Olufisoye Amos Oluniyi">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles/place.css">
+        
+    </head>
+    <body>
+        <header>
+            <div class="hero">
+                <h1>Nigeria</h1>
+                <picture>
+                    <source media="(min-width: 1000px)" srcset="images/hero-large.webp">
+                    <source media="(min-width: 500px)" srcset="images/hero-medium.webp">
+                    <img src="images/hero-small.webp" alt="Hero Banner Image" width="500" height="250">
+                </picture>
+            </div>
+        </header>
+        <main>
+            <section>
+                <h2>Data</h2>
+                <dl class="data-list">
+                    <dt>Area</dt><dd>923,768&#x33A2;</dd>
+                    <dt>Population</dt><dd>237,527,782</dd>
+                    <dt>Capital</dt><dd>Abuja</dd>
+                    <dt>Languages</dt><dd>Yoruba, Hausa, Igbo</dd>
+                    <dt>Currency</dt><dd>Naira</dd>
+                    <dt>Timezone</dt><dd>UTC+1</dd>
+                    <dt>Calling Code</dt><dd>+234</dd>
+                    <dt>Internet TLD</dt><dd>.ng</dd>
+                </dl>
+            </section>
+            <section>
+                <h2>
+                    Weather
+                    <img src="images/rainy.svg" alt="Nigeria Rainy">
+                </h2>
+                
+                <dl id="weather-info">
+                    <dt>Temperature</dt><dd id="temperature"></dd>
+                    <dt>Condition</dt><dd id="conditions"></dd>
+                    <dt>Wind</dt><dd id="wind"></dd>
+                    <dt>Wind Chill</dt><dd id="chill"></dd>
+                </dl>
+            </section>
+        </main>
+        <footer>
+            <p>©<span id="currentyear"> </span> 🌏 Olufisoye Amos Oluniyi 🌏 Nigeria</p>
+            <p class="lastModified"></p>
+        </footer>
+        <script rel="JavaScripts" src="scripts/place.js" async defer></script>
+    </body>
+</html>
