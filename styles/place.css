@@ -49,7 +49,7 @@ section h2 {
 }
 
 section img {
-  display: block;
+  display: none;
   width: 100px;
   margin: auto;
 }
@@ -157,6 +157,7 @@ footer p {
   }
 
   section h2 img {
+    display: block;
     width: 40px;
     height: auto;
     margin-left: 1rem;
