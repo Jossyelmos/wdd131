@@ -1,0 +1,27 @@
+
+@media (min-width: 37.5em) {
+	nav {
+		width: 400px;
+		margin: 0;
+	}
+
+	main { 
+		max-width: 900px;
+		margin: 0 auto;
+	}
+
+	#menu {
+		display: none; 
+	}
+
+	.navigation {
+		flex-direction: row;
+        display: flex;
+        justify-content: space-between;
+	}
+
+	.navigation a {
+		display: block;
+		flex: 1 1 100%;
+	}
+}
