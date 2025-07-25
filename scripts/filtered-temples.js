@@ -5,7 +5,7 @@ const temples = [
     dedicated: "2005, August, 7",
     area: 11500,
     imageUrl:
-    "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/aba-nigeria/400x250/aba-nigeria-temple-lds-273999-wallpaper.jpg"
+    "images/aba-nigeria.jpg"
   },
   {
     templeName: "Manti Utah",
@@ -13,7 +13,7 @@ const temples = [
     dedicated: "1888, May, 21",
     area: 74792,
     imageUrl:
-    "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/manti-utah/400x250/manti-temple-768192-wallpaper.jpg"
+    "images/manti-temple.jpg"
   },
   {
     templeName: "Payson Utah",
@@ -21,7 +21,7 @@ const temples = [
     dedicated: "2015, June, 7",
     area: 96630,
     imageUrl:
-    "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/payson-utah/400x225/payson-utah-temple-exterior-1416671-wallpaper.jpg"
+    "images/payson-utah.jpg"
   },
   {
     templeName: "Yigo Guam",
@@ -29,7 +29,7 @@ const temples = [
     dedicated: "2020, May, 2",
     area: 6861,
     imageUrl:
-    "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/yigo-guam/400x250/yigo_guam_temple_2.jpg"
+    "images/yigo_guam.jpg"
   },
   {
     templeName: "Washington D.C.",
@@ -37,7 +37,7 @@ const temples = [
     dedicated: "1974, November, 19",
     area: 156558,
     imageUrl:
-    "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/washington-dc/400x250/washington_dc_temple-exterior-2.jpeg"
+    "images/washington.jpeg"
   },
   {
     templeName: "Lima Perú",
@@ -45,7 +45,7 @@ const temples = [
     dedicated: "1986, January, 10",
     area: 9600,
     imageUrl:
-    "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/lima-peru/400x250/lima-peru-temple-evening-1075606-wallpaper.jpg"
+    "images/lima-peru.jpg"
   },
   {
     templeName: "Mexico City Mexico",
@@ -53,7 +53,7 @@ const temples = [
     dedicated: "1983, December, 2",
     area: 116642,
     imageUrl:
-    "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
+    "images/mexico-city.jpg"
   },
   {
     templeName: "Johannesburg South Africa",
@@ -61,7 +61,7 @@ const temples = [
     dedicated: "1982, November, 27",
     area: 19184,
     imageUrl:
-    "https://churchofjesuschristtemples.org/assets/img/temples/johannesburg-south-africa-temple/johannesburg-south-africa-temple-22475-main.jpg"
+    "images/johannesburg.jpg"
   },
   {
     templeName: "Auckland New Zealand",
@@ -69,7 +69,7 @@ const temples = [
     dedicated: "2020, June, 13",
     area: 45456,
     imageUrl:
-    "https://churchofjesuschristtemples.org/assets/img/temples/auckland-new-zealand-temple/auckland-new-zealand-temple-56277-main.jpg"
+    "images/auckland-new-zealand.jpg"
   },
   {
     templeName: "Toronto Ontario",
@@ -77,7 +77,7 @@ const temples = [
     dedicated: "1987, October, 10",
     area: 55558,
     imageUrl:
-    "https://churchofjesuschristtemples.org/assets/img/temples/toronto-ontario-temple/toronto-ontario-temple-57469-main.jpg"
+    "images/toronto.jpg"
   },
   // Add more temple objects here...
 ];
@@ -108,7 +108,6 @@ function getOldTemples(temples) {
   const templeCard = dedicatedBefore1900.map(templeCardTemplate).join("");
   document.querySelector(".container").innerHTML = templeCard;
 }
-getOldTemples(temples);
 
 function getNewTemples(temples) {
   const dedicatedAfter2000 = temples.filter((temple) => {
@@ -119,17 +118,15 @@ function getNewTemples(temples) {
   const templeCard = dedicatedAfter2000.map(templeCardTemplate).join("");
   document.querySelector(".container").innerHTML = templeCard;
 }
-getNewTemples(temples);
 
 function getLargeTemples(temples) {
   const biggerTemple = temples.filter((temple) => {
-    const lagerTemple = temple.area > 90000;
-    return lagerTemple;
+    const largerTemple = temple.area > 90000;
+    return largerTemple;
   });
-  const temmpleCard = biggerTemple.map(templeCardTemplate).join("");
-  document.querySelector(".container").innerHTML = temmpleCard;
+  const templeCard = biggerTemple.map(templeCardTemplate).join("");
+  document.querySelector(".container").innerHTML = templeCard;
 }
-getLargeTemples(temples);
 
 function getSmallTemples(temples) {
   const smallerTemple = temples.filter((temple) => {
@@ -139,8 +136,6 @@ function getSmallTemples(temples) {
   const temmpleCard = smallerTemple.map(templeCardTemplate).join("");
   document.querySelector(".container").innerHTML = temmpleCard;
 }
-getSmallTemples(temples);
-
 
 // Display the temples......
 document.querySelector("#home").addEventListener("click", () => {
@@ -162,8 +157,6 @@ document.querySelector("#large").addEventListener("click", () => {
 document.querySelector("#small").addEventListener("click", () => {
   getSmallTemples(temples);
 });
-
-
 
 const hamButton = document.querySelector('#menu');
 const navigation = document.querySelector('.navigation');
