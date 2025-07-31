@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 | Product Review Form</title>
+    <meta name="description" content="This is getting feedback for the product from customers.">
+    <meta name="author" content="Olufisoye Amos Oluniyi">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/form.css">
+    <script rel="JavaScripts" src="scripts/form.js" defer></script>
+    
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form method="get" action="review.html" class="wf1">
+            <fieldset>
+                    <label>Product Name
+                        <select name="product" id="product" required>
+                            <option value="" disabled selected>Select a Product &#9662;</option>
+                        </select>
+                    </label>
+                    <div class="radio-row">
+                        <label class="rating-title">Overall Rating</label>
+                        <div class="rating-options">
+                            <label>⭐︎<input type="radio" name="stars" value="1" id="onestar" required></label>
+                            <label>⭐︎⭐︎<input type="radio" name="stars" value="2" id="twostars" required></label>
+                            <label>⭐︎⭐︎⭐︎<input type="radio" name="stars" value="3" id="threestars" required></label>
+                            <label>⭐︎⭐︎⭐︎⭐︎<input type="radio" name="stars" value="4" id="fourstars" required></label>
+                            <label>⭐︎⭐︎⭐︎⭐︎⭐︎<input type="radio" name="stars" value="5" id="fivestars" required></label>
+                        </div>
+                    </div>
+                    
+                    <label>Date of Installation <input type="date" name="installationDate" required></label>
+
+                    <div class="checkbox">
+                        <label>Which features did you find usefull in the product</label>
+                        <p>(Check all that apply)</p>
+                        <label><input type="checkbox" name="durability" value="yes">Durability</label>
+                        <label><input type="checkbox" name="ease" value="yes">Ease of Use</label>
+                        <label><input type="checkbox" name="performance" value="yes">Performance</label>
+                        <label><input type="checkbox" name="design" value="yes">Design</label>
+                    </div>
+
+            </fieldset>
+            <fieldset>
+                <label>Written Review (optional)<textarea name="review" id="review"></textarea></label>
+               <label>Your Name (optional) <input type="text" name="name"></label>
+            </fieldset>
+            <input type="submit" value="Post Review">
+            
+        </form>
+        
+    </main>
+    <footer>
+        <p>©<span id="currentyear"> </span> 🌏 Olufisoye Amos Oluniyi 🌏 Nigeria</p>
+        <p class="lastModified"></p>
+    </footer>
+    
+</body>
+</html>
