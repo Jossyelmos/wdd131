@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Health Habits Tracker | Home</title>
+    <meta name="description" content="Health Habits Tracker project helps users track their daily health habits.">
+    <meta name="author" content="Olufisoye Amos Oluniyi">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/habits.css">
+    <script rel="JavaScripts" src="scripts/habits.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.jpeg" alt="">
+            <h1>Health Habit Tracker</h1>
+        </div>
+        <button type="button" id="menu"></button>
+        <nav>
+            <ul class="navigation">
+                <li><a href="habits.html">Home</a></li>
+                <li><a href="tracker.html">Tracker</a></li>
+                <li><a href="contact.html">Contacts Us</a></li>
+                <li><a href="reference.html">Refrences</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source media="(min-width: 1000px)" srcset="images/hero.webp">
+                <source media="(min-width: 500px)" srcset="images/hero1.webp">
+                <img src="images/small-hero.avif" alt="Healthy habits" loading="lazy" width="150" height="300">
+            </picture>
+        </div>
+        <div class="section">
+            <h2>HEALTH HABITS TRACKER</h2>
+            <p>A simple tool to help you improve your well-being by tracking your daily health habits.</p>
+            <ul>
+                <li>Stay Hydrated by drinking plenty water</li>
+                <li>Exercise regularly to keep your body active</li>
+                <li>Aim for 7-8 hours of sleep each night</li>
+            </ul>
+            <a href="tracker.html">START TRACKING MY HABITS</a>
+        </div>
+    </main>
+    <footer>
+        <p>©<span id="currentyear"> </span> 🌏 Olufisoye Amos Oluniyi 🌏 Nigeria</p>
+        <p class="lastModified"></p>
+    </footer>
+</body>
+</html>

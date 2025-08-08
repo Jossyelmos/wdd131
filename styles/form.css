@@ -152,9 +152,9 @@ footer {
     }
 
     main {
-    margin: 0 auto;
-    width: 400px !important;
-    background-color: #D5CDD5;
-    margin-bottom: 2rem;
-}
+        margin: 0 auto;
+        width: 400px !important;
+        background-color: #D5CDD5;
+        margin-bottom: 2rem;
+    }
 }
