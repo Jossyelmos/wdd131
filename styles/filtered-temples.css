@@ -80,6 +80,7 @@ nav {
 	text-align: center;
 	text-decoration: none;
 	color: #fff;
+	transition: all 0.3s ease-in-out;
 }
 .navigation a:hover {
 	background-color: #bbb;

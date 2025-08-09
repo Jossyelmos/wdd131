@@ -90,7 +90,7 @@ document.addEventListener("DOMContentLoaded", () => {
         viewHistoryBtn.textContent = "View History";
       }
     });
-  }
+  };
 
   // Tracker functions
   function displayHabit(habit) {
@@ -300,7 +300,7 @@ function displayHabitHistory() {
       hamButton.classList.toggle('open');
       title.classList.toggle('hidden');
     });
-  }
+};
 
 
 // Footer javascript section
